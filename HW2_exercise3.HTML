@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #3</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  float: left;
+  display: table;
+}
+
+.table1 {
+  border-collapse: collapse;
+  float: left;
+margin-left: 10PX;
+  border-spacing: 0;
+  width: 31%;
+  border: 1px solid #ddd;
+  background-color: rgba(211, 211, 211, 0.863);
+  height: 500px;
+}
+
+.table2 {
+  border-collapse: collapse;
+  float: left;
+margin-left: 10PX;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+  background-color: rgba(211, 211, 211, 0.863);
+  height: 300px;
+}
+
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  font-size: small;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  
+  <div class="column">
+
+    <table class="table1">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>MONDAY
+          <hr>
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;">What is Cloud Computing</td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+    <table class="table1">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>TUESDAY
+          <hr>
+
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;"></td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+    <table class="table1" style="background-color: rgb(243, 211, 107);">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>WEDNESDAY
+          <hr>
+          
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;">What is Cloud Computing</td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+    
+  </div>
+  <div class="column">
+    <table class="table1">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>THURSDAY
+          <hr>
+
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;"></td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+    <table class="table1">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>FRIDAY
+          <hr>
+
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;"></td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+    <table class="table1">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>WEEKEND
+          <hr>
+
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;"></td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <DIV>
+    <table class="table1" style="height: 300PX; width: 47.5%; margin-left: 15PX; margin-right:15PX ;">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>THIS MONTH
+          <hr>
+
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;">What is Cloud Computing</td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+  </DIV>
+  <DIV>
+    <table class="table1" style="height: 300PX; width: 47%; margin-left: 15PX; margin-right:15PX ;">
+      <tr style="line-height: 10px; height: 10px;">
+        <th>NEXT MONTH
+          <hr>
+
+        </th>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td >Course Introduction</td>
+      </tr>
+      <tr style="line-height: 10px; height: 10px;">
+        <td>Code & Slides Download</td>
+      </tr>
+      <tr >
+        <td style="line-height: 10px; height: 10px;">What is Cloud Computing</td>
+      </tr>
+      <tr >
+        <td></td>
+      </tr>
+    </table>
+  </DIV>
+</div>
+
+
+</body>
+</html>
