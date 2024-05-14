@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; background-color: black; height: 10vh; }
+.item3 { grid-area: main; background-color: orange; height: 45vh;}
+.item4 { grid-area: right; background-color: green; height: 45vh;}
+.item5 { grid-area: footer; background-color: blue; height: 20vh;}
+
+.grid-container {
+    height: 100vh;
+    color: white;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+  gap: 15px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1"></div>
+  <div class="item3"></div>  
+  <div class="item4"></div>
+  <div class="item5"></div>
+</div>
+
+</body>
+</html>
+
+
