@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #3</title>
+    <style>
+        .flex-container {
+          display: flex;
+          background-color: rgb(243, 222, 130);
+          height: 100vh;
+          justify-content: center;
+          align-items: flex-start; /* Adjusted */
+        }
+
+        .flex-container > div {
+          background-color: white;
+          width: 40vh;
+          padding: 20px;
+          font-size: 20px;
+          text-align: center;
+          margin: 100px auto 10px auto; /* Increased margin-top */
+          border-radius: 100px; /* Moved from inline style */
+        }
+
+        img {
+          width: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>
+            <table style= " padding-left: 15px;" >
+                <tr>
+                    <td><img src="user icon.jpg"></td>
+                    <td style="text-align: left; "> <b>User #1 </b><br>Amman,Jordan</td>
+                </tr>
+            </table>
+            <hr>
+            <table style= " padding-left: 15px;" >
+                <tr>
+                    <td><img src="user icon.jpg"></td>
+                    <td style="text-align: left; "> <b>User #2 </b> <br>Amman,Jordan</td>
+                </tr>
+            </table>
+            <hr>
+            <table style= " padding-left: 15px;" >
+                <tr>
+                    <td><img src="user icon.jpg"></td>
+                    <td style="text-align: left; "> <b>User #3 </b> <br>Amman,Jordan</td>
+                </tr>
+            </table>
+            <hr>
+            <table style= " padding-left: 15px;" > 
+                <tr>
+                    <td><img src="user icon.jpg"></td>
+                    <td style="text-align: left; "> <b>User #4 </b> <br>Amman,Jordan</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
