@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Website</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+
+  header {
+    background-color: #444444;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .menu {
+    font-size: 18px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left-content {
+    flex: 3;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+
+  }
+
+
+  .left-content p {
+    grid-column: 1 /span 3; /* Paragraph spans all 3 columns */
+  }
+
+  .right-content {
+    flex: 1;
+    background-color: grey;
+    padding: 20px;
+    margin: 10px;
+    height: 100vh;
+
+  }
+
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    overflow: hidden;
+
+  }
+
+  .card-header {
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .card-body {
+    padding: 10px;
+
+  }
+
+  @media (max-width: 1024px) {
+    /*  iPad */
+    .left-content {
+        grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+    .card {
+        grid-column: 1 /span 1; 
+
+  }
+
+  .card-header {
+        grid-column: 1 /span 1; 
+
+  }
+
+  .card-body {
+        grid-column: 1 /span 1; 
+
+  }
+  }
+
+  @media (max-width: 768px) {
+    /*  phones  */
+    .left-content {
+        grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+    .card {
+        grid-column: 1 /span 1;
+        width: 120%; 
+
+  }
+
+  .card-header {
+        grid-column: 1 /span 1; 
+
+  }
+
+  .card-body {
+        grid-column: 1 /span 1; 
+
+  }
+  .menu {
+    font-size: 15px;
+  }
+  .right-content {
+    flex: 1;
+    background-color: grey;
+    padding: 20px;
+    margin: 10px;
+    height: 165vh;
+
+  }
+
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">My Website</div>
+  <div class="menu">
+    <span>Menu 1</span>
+    <span>Menu 2</span>
+    <span>Menu 3</span>
+  </div>
+</header>
+
+<div class="main-content">
+  <div class="left-content">
+    <p><b>This is the main heading</b>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br>
+         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="card">
+      <div class="card-header">Card 1</div>
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Card 2</div>
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Card 3</div>
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Card 4</div>
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Card 5</div>
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+  </div>
+  <div class="right-content">
+    Have you discovered all of the other excellent content on this website?
+  </div>
+</div>
+
+</body>
+</html>

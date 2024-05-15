@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Web Page</title>
+<script src="https://kit.fontawesome.com/5009c5b097.js" crossorigin="anonymous"></script>
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+  }
+  
+  .box {
+    padding: 1px;
+    height: 30vh; 
+    display: flex;
+    align-items: center;
+    border: 2px solid black; 
+  }
+  
+  img {
+    max-width: 40%; 
+    min-height: 30vh;
+    display: block;
+    margin-right: 10px; 
+  }
+  
+  @media (max-width: 1024px) {
+    /* iPad  */
+    .container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* phone */
+    .container {
+      grid-template-columns: 100%;
+    }
+    
+    .box {
+      height: auto; 
+      flex-direction: column; 
+    }
+    
+    img {
+      max-width: 100%; 
+      margin: 0; 
+      margin-bottom: 10px; 
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <img src="pic2.jpg" alt="Image">
+        <p><b style="color: black;">Best Mountsin trail 2020</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eros donec ac odio tempor. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. 
+        <br><br>&nbsp; <br><br><i class="fa-solid fa-user fa-2xl" style="color: #000000;"></i> John Smnith <br> &ensp;&ensp;&ensp;&ensp; Aug12</p>
+      </div>
+      <div class="box">
+        <img src="pic2.jpg" alt="Image">
+        <p><b style="color: black;">Best Mountsin trail 2020</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eros donec ac odio tempor. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. 
+        <br><br>&nbsp; <br><br><i class="fa-solid fa-user fa-2xl" style="color: #000000;"></i> John Smnith <br> &ensp;&ensp;&ensp;&ensp; Aug12</p>
+      </div>
+      <div class="box">
+        <img src="pic2.jpg" alt="Image">
+        <p><b style="color: black;">Best Mountsin trail 2020</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eros donec ac odio tempor. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. 
+        <br><br>&nbsp; <br><br><i class="fa-solid fa-user fa-2xl" style="color: #000000;"></i> John Smnith <br> &ensp;&ensp;&ensp;&ensp; Aug12</p>
+      </div>
+</div>
+
+</body>
+</html>
